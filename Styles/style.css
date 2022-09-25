@@ -1,0 +1,47 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.first, .second{
+	display: inline-block;
+}
+.twocars img{
+width: 200px;
+height: 100px;
+}
+.twocars{
+	position: relative;
+}
+.first{
+	position: absolute;
+	margin-left: 200px;
+	animation-name: redcar;
+	animation-delay: 0.3s;
+	animation-iteration-count: infinite;
+	animation-direction: reverse;
+}
+.second{
+	position: absolute;
+	margin-left: 400px;
+	animation-name: yellowcar;
+	animation-duration: 2s;
+	animation-delay: 0.3s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes redcar {
+from{
+	left: 0px;
+}
+to{
+	left: 80px;
+}
+}
+@keyframes yellowcar {
+from{
+	left: 0px;
+}
+to{
+	left: 300px;
+}
